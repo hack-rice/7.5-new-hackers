@@ -96,7 +96,7 @@ A common practice for Python developers is to export secret tokens as
 environment variables. Back in your terminal, export the Slack token with the
 name `SLACK_BOT_TOKEN`:
 
-    export SLACK_BOT_TOKEN='your bot user access token here'
+    export SLACK_BOT_TOKEN='your bot user OAuth access token here'
 
 Nice, now we are authorized to use the Slack RTM and Web APIs as a bot user.
 
