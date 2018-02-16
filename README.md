@@ -354,7 +354,7 @@ Check out these posts to learn what you could do:
   [via SMS](https://www.twilio.com/blog/2016/05/build-sms-slack-bot-python.html)
   or
   [phone calls](https://www.twilio.com/blog/2016/05/add-phone-calling-slack-python.html)
-* [Integrate other web APIs](/api-integration.html) such as
+* [Integrate other web APIs](https://www.fullstackpython.com/api-integration.html) such as
   [GitHub](https://developer.github.com/v3/) or [Twilio](/twilio.html)
 * Explore other [Slack Platform APIs](https://api.slack.com) and the [reasons you might use one over another](https://medium.com/slack-developer-blog/getting-started-with-slacks-apis-f930c73fc889).
 * Build an [onboarding bot using the Slack Events API](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
