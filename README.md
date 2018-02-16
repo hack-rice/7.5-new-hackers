@@ -93,8 +93,8 @@ it displays a *bot user oauth access token* for authentication as the bot user.
 <img src="/img/160604-simple-python-slack-bot/copy-bot-access-token.png" width="100%" class="technical-diagram img-rounded" alt="After installing on the development workspace, you can copy the bot user oauth access token">
 
 A common practice for Python developers is to export secret tokens as
-environment variables. Back in your terminal, export the Slack token with the
-name `SLACK_BOT_TOKEN`:
+environment variables. Back in your terminal, export the full Slack token with the
+name `SLACK_BOT_TOKEN` and make sure to surround your token with quotes:
 
     export SLACK_BOT_TOKEN='your bot user OAuth access token here'
 
@@ -110,7 +110,6 @@ named `starterbot.py` and include the following code in it.
     import re
     from slackclient import SlackClient
 ```
-
 
 
 With our dependencies imported we can use them to obtain the environment
@@ -244,7 +243,8 @@ just one example command: *do*. If the command starts with a known command, it
 will have an appropriate response. If not, a default response is used. The
 response is sent back to Slack by calling the
 [`chat.postMessage`](https://api.slack.com/methods/chat.postMessage) Web API
-method with the channel.
+method with the channel. You can extend this function to handle more commands 
+and expand the functionality of your slackbot. 
 
 Here is how the entire program should look when it's all put together
 (you can also
@@ -336,7 +336,7 @@ existing channel.
 
 Now start giving Starter Bot commands in your channel.
 
-<img src="/img/160604-simple-python-slack-bot/working-starterbot.png" width="100%" class="technical-diagram img-rounded" alt="Give StarterBot commands in your Slack channel.">
+<img src="/img/160604-simple-python-slack-bot/working-starterbot2.png" width="100%" class="technical-diagram img-rounded" alt="Give StarterBot commands in your Slack channel.">
 
 
 ## Wrapping Up
