@@ -248,7 +248,7 @@ method with the channel.
 
 Here is how the entire program should look when it's all put together
 (you can also
-[view the file in GitHub](https://github.com/mattmakai/slack-starterbot/blob/master/starterbot.py)):
+view the file in GitHub):
 
 ```python
 import os
