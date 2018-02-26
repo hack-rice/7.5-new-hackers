@@ -14,15 +14,23 @@ We will walk through setting up your development environment, obtaining a Slack 
 Tools We Need
 Our bot, which we will name "StarterBot", requires Python and the Slack API. To run our Python code we need:
 
-* Either [Python 2 or 3](/python-2-or-3.html)
+* Either [Python 2 or 3](https://www.fullstackpython.com/python-2-or-3.html) (Python 2 must be at least version 2.7.9)
 * [pip](https://pip.pypa.io/en/stable/) and
   [virtualenv](https://virtualenv.pypa.io/en/stable/) to handle Python
-  [application dependencies](/application-dependencies.html)
+  [application dependencies](https://www.fullstackpython.com/application-dependencies.html)
 * [Free Slack account](https://slack.com/) - you need to be signed into at
   least one workspace where you have access to building apps.
+  
+In addition, Windows users will need To install Cygwin (more on this below).
 
 It is also useful to have the Slack API docs handy while you're building this tutorial.
 All the code for this tutorial is available open source under the MIT license in the slack-starterbot public repository.
+
+### Cygwin installation (Windows users only)
+
+Visit [this website](https://cygwin.com/install.html) to install Cygwin.  For each screen on the installer where it provides a default option, the default is fine.  However, there is one screen that asks you to "Choose A Download Site".  Any site should work; however, some work better than others.  'https://mirror.steadfast.net' works well.
+
+From this point on, whenever the tutorial says to use the terminal, you should use Cygwin instead.
 
 ### Pip installation
 If you don't already have pip installed, we'll go ahead an install that now because it will be essential 
@@ -34,16 +42,20 @@ you installed print to your terminal.
 
 ## Establishing Our Environment
 We now know what tools we need for our project so let's get our development
-environment set up. Go to the terminal (or Command Prompt on Windows) and
+environment set up. Go to the terminal (or Cygwin on Windows) and
 change into the directory where you want to store this project. Within
 that directory, create a new virtualenv to isolate our application
 dependencies from other Python projects.
 
     virtualenv starterbot
 
-Activate the virtualenv:
+Activate the virtualenv (Mac/Linux):
 
     source starterbot/bin/activate
+
+Activate the virtualenv (Windows):
+
+    source starterbot/Scripts/activate
 
 Your prompt should now look like the one in this screenshot.
 
@@ -346,15 +358,15 @@ code you can add whatever features you want to build.
 There is a whole lot more that could be done using the Slack RTM API and Python.
 Check out these posts to learn what you could do:
 
-* Attach a persistent [relational database](/databases.html) or
-  [NoSQL back-end](/no-sql-datastore.html) such as
-  [PostgreSQL](/postgresql.html), [MySQL](/mysql.html) or [SQLite](/sqlite.html)
+* Attach a persistent [relational database](https://www.fullstackpython.com/databases.html) or
+  [NoSQL back-end](https://www.fullstackpython.com/no-sql-datastore.html) such as
+  [PostgreSQL](https://www.fullstackpython.com/postgresql.html), [MySQL](https://www.fullstackpython.com/mysql.html) or [SQLite](https://www.fullstackpython.com/sqlite.html)
   to save and retrieve user data
 * Add another channel to interact with the bot
   [via SMS](https://www.twilio.com/blog/2016/05/build-sms-slack-bot-python.html)
   or
   [phone calls](https://www.twilio.com/blog/2016/05/add-phone-calling-slack-python.html)
 * [Integrate other web APIs](https://www.fullstackpython.com/api-integration.html) such as
-  [GitHub](https://developer.github.com/v3/) or [Twilio](/twilio.html)
+  [GitHub](https://developer.github.com/v3/) or [Twilio](https://www.fullstackpython.com/twilio.html)
 * Explore other [Slack Platform APIs](https://api.slack.com) and the [reasons you might use one over another](https://medium.com/slack-developer-blog/getting-started-with-slacks-apis-f930c73fc889).
 * Build an [onboarding bot using the Slack Events API](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
