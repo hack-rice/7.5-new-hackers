@@ -370,4 +370,4 @@ Check out these posts to learn what you could do:
   [GitHub](https://developer.github.com/v3/) or [Twilio](https://www.fullstackpython.com/twilio.html)
 * Explore other [Slack Platform APIs](https://api.slack.com) and the [reasons you might use one over another](https://medium.com/slack-developer-blog/getting-started-with-slacks-apis-f930c73fc889).
 * Build an [onboarding bot using the Slack Events API](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
-* Integerate [natural language processing](https://medium.com/@nidhog/how-to-make-a-chatbot-on-slack-with-python-82015517f19c) to better interact with users
+* Integrate [natural language processing](https://medium.com/@nidhog/how-to-make-a-chatbot-on-slack-with-python-82015517f19c) to better interact with users or create a chatbot.
