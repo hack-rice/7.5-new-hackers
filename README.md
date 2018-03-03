@@ -112,6 +112,8 @@ name `SLACK_BOT_TOKEN` and make sure to surround your token with quotes:
 
 Nice, now we are authorized to use the Slack RTM and Web APIs as a bot user.
 
+Note that you should be using the Bot User OAuth Access Token, not the OAuth Access Token.
+
 ## Coding Our Starter Bot
 We've got everything we need to write the Starter Bot code. Create a new file
 named `starterbot.py` and include the following code in it.
@@ -371,3 +373,9 @@ Check out these posts to learn what you could do:
 * Explore other [Slack Platform APIs](https://api.slack.com) and the [reasons you might use one over another](https://medium.com/slack-developer-blog/getting-started-with-slacks-apis-f930c73fc889).
 * Build an [onboarding bot using the Slack Events API](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
 * Integrate [natural language processing](https://medium.com/@nidhog/how-to-make-a-chatbot-on-slack-with-python-82015517f19c) to better interact with users or create a chatbot.
+
+
+
+# FAQ
+I'm getting an error along the lines of "OSError \[Errorno 13\] Permission Denied" when I try to install Pip!
+ * Try adding '--user' in the command line when running the pip install file!
